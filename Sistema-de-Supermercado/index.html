@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de supermercado-Carrito de compras</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Mi supermercado online 🛒</h1>
+    </div>
+    <h2>Seleccion de productos</h2>
+
+    <template id="producto-template">
+      <div class="producto-card">
+        <h3 data-nombre></h3>
+        <p>Precio: $<span data-precio></span></p>
+        <p>
+          <small>Categoría: <span data-categoria></span></small>
+        </p>
+        <button data-agregar-boton>Agregar</button>
+      </div>
+    </template>
+
+    <div id="productoLista" class="productos-grid"></div>
+    <div id="carritoLista" class="carrito-items"></div>
+    <div class="totales">
+      <p>Cantidad de productos:<span id="totalCantidad">0</span></p>
+      <p>Total a pagar:$<span id="totalPrecio">0</span></p>
+    </div>
+  </body>
+</html>
